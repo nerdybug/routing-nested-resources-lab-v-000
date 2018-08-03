@@ -7,7 +7,7 @@ class SongsController < ApplicationController
         @songs = @artist.songs
       else
         redirect_to artists_path, alert: "No such artist"
-      end  
+      end
     else
       @songs = Song.all
     end
